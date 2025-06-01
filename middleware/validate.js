@@ -1,5 +1,5 @@
 const Joi = require("joi");
-const {status} = require("http-status");
+const { status } = require("http-status");
 const pick = require("../utils/pick");
 const apiResponse = require("../utils/apiResponse");
 
@@ -15,7 +15,7 @@ const validate = (schema) => (req, res, next) => {
     const errorMessage = error.details
       .map((details) => details.message)
       .join(", ");
-      return apiResponse.error(res,errorMessage,status.BAD_REQUEST);
+    return apiResponse.error(res, errorMessage, status.BAD_REQUEST);
   }
   Object.assign(req, value);
   return next();

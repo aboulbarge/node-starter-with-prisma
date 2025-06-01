@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 const defaultRoutes = [
-  {
-    path: "/example-route",
-    route: RoteName,
-  },
-  
+  // {
+  //   path: "/example-route",
+  //   route: RoteName,
+  // },
+
 ];
 
 defaultRoutes.forEach((route) => {
