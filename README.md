@@ -15,7 +15,7 @@ A minimal Node.js starter kit using **Prisma ORM**, **Joi** for validation, and 
 ---
 
 ## 📁 Project Structure
-
+```
 ├── controllers/ # Route logic
 ├── middleware/ # Joi validation and other middlewares
 │ └── validate.js # Custom validation middleware
@@ -26,6 +26,7 @@ A minimal Node.js starter kit using **Prisma ORM**, **Joi** for validation, and 
 │ └── apiResponse.js
 ├── server.js # Entry point
 └── package.json # Scripts and dependencies
+```
 
 ---
 
@@ -36,13 +37,20 @@ A minimal Node.js starter kit using **Prisma ORM**, **Joi** for validation, and 
 ```bash
 npm install
 ```
+### 1. Configure .env and Run Initial Migration
 
 ```bash
 cp .env.example .env
 
-```bash
 npx prisma migrate dev --name init
+```
 
+OR
+
+```bash
+npm run migrate
+```
+---
 
 ## 📜 Available Scripts
 Command	Description
