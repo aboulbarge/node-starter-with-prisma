@@ -35,6 +35,7 @@ A minimal Node.js starter kit using **Prisma ORM**, **Joi** for validation, and 
 
 ```bash
 npm install
+```
 
 ```bash
 cp .env.example .env
