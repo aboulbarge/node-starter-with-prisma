@@ -53,10 +53,13 @@ npm run migrate
 ---
 
 ## 📜 Available Scripts
-Command	Description
+### Command	Description :
+
+```
 npm run dev	Run in development mode using nodemon
 npm start	Run in production mode
 npm run migrate	Create and apply new Prisma migrations
 npm run deploy-migrate	Apply migrations in production
 npm run generate	Regenerate Prisma client
 npm run seed	(Optional) Seed your database
+```
